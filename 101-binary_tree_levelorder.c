@@ -11,7 +11,7 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
 	size_t height, iter;
 
-	if (!tree)
+	if (!(tree && func))
 		return;
 	height = binary_tree_height(tree);
 	for (iter = 0; iter < height; iter++)
