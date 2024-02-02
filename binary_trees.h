@@ -48,5 +48,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *,
 				      const binary_tree_t *);
 void binary_tree_levelorder(const binary_tree_t *, void (*)(int));
 void access_level(const binary_tree_t *, size_t, void (*)(int));
+int binary_tree_is_complete(const binary_tree_t *);
+size_t reach_leaves(const binary_tree_t *, size_t);
 
 #endif  /* BINARY_TREES_H */
